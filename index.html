@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alchemy Chamber Pedals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <img src="./images/logo-nova.png" class="img-fluid pe-4" style="max-height: 150px; border-radius: 20px;" alt="Logo Alchemy Chamber">
+            <h1 class="navbar-brand section-title m-0 fs-1">Alchemy Chamber</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex"> <!--O 'd-block' é o display block, que faz com que os itens fiquem um abaixo do outro e não um ao lado do outro. Com o 'd-md-flex' temos o display flex (um ao lado do outro) a partir de uma tela de tamanho médio (m).-->
+                    <li class="nav-item fw-bold">
+                        <a href="#home" class="nav-link">
+                            <i class="bi bi-house me-1"></i>
+                            The Chamber
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#about" class="nav-link">
+                            <i class="bi bi-book me-1"></i>
+                            The Alchemist's Scroll
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#store" class="nav-link">
+                            <i class="bi bi-music-note-list me-1"></i>
+                            Alchemy Pedals
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contact" class="nav-link">
+                            <i class="bi bi-magic me-1"></i>
+                            Summon Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="home">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="carousel-img" src="./images/slides/wizard-at-work.jpg" alt="Wizard at work">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="carousel-img" src="./images/slides/the-chamber.png" alt="The Chamber">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="carousel-img" src="./images/slides/wizard-at-work2.png" alt="Wizard at work">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div id="about" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5"> <!--Esta coluna vai ocupar o espaço de 5 colunas (lembrando que é um total de 12 por linha)-->
+                            <img src="./images/fachada.png" class="d-block w-100 rounded" alt="Store front">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">About <span class="text-colored">Alchemy Chamber</span></h2>
+                            <p>
+                                In the heart of sound sorcery, Alchemy Chamber was forged to transmute ordinary tones into pure sonic gold. We are more than just a pedal store—we are a sanctuary for sonic alchemists, gear wizards, and riff spellcasters seeking to craft the ultimate sound elixir.
+                            </p>
+                            <p>
+                                From fuzz potions to echoing incantations, our carefully curated selection of pedals is designed to awaken the true magic in your music. Whether you're a wandering bard, a heavy riff conjurer, or an experimental sonic wizard, you'll find the perfect formula for your tone here.
+                            </p>
+                            <p>
+                                So step inside, fellow alchemist. The Chamber awaits.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">From gentle aether to molten distortion, <span class="text-colored">all paths find a home here.</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./images/surf-rock-bandfem.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/heavy-guitarrist.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/blues-guitarrist.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="store" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Chamber Devices
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-store">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#overdrive" class="fw-bold text-start nav-link text-colored active"> <i class= "bi bi-lightning me-1"></i> Overdrive</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#equalizer" class="fw-bold text-start nav-link text-colored"><i class="bi bi-sliders2-vertical me-1"></i>Equalizer</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#reverb" class="fw-bold text-start nav-link text-colored"> <i class= "bi bi-soundwave me-1"></i> Reverb</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#delay" class="fw-bold text-start nav-link text-colored"><i class="bi bi-repeat me-1"></i>Delay</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#fuzz" class="fw-bold text-start nav-link text-colored"><i class="bi bi-fire me-1"></i>Fuzz</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#noise-reduction" class="fw-bold text-start nav-link text-colored"><i class="bi bi-volume-down me-1"></i>Noise Reduction</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#heavy-distortion" class="fw-bold text-start nav-link text-colored"><i class="bi bi-lightning me-1"></i>Heavy Distortion</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="overdrive">
+                                <div class="row">
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/1.overdrive/amber-forge.jpg" alt="Amber Forge">
+                                        <h5 class="text-colored fw-bold mt-2">Amber Forge</h5>
+                                        <p>
+                                            Forged in fire and amber, this overdrive delivers molten warmth with enchanted sustain and dynamic attack.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/1.overdrive/arcane-drive.jpg" alt="Arcane Drive">
+                                        <h5 class="text-colored fw-bold mt-2">Arcane Drive</h5>
+                                        <p>
+                                            Built for tone wizards and sonic explorers alike, the Arcane Drive enhances your rig with a mystical warmth that feels both timeless and powerful.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/1.overdrive/grimoire-gain.jpg" alt="Grimoire Gain">
+                                        <h5 class="text-colored fw-bold mt-2">Grimoire Gain</h5>
+                                        <p>
+                                            Each note turns a page in your tonal grimoire. Articulate, expressive overdrive for mystical solos.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/1.overdrive/molten-chant.jpg" alt="Molten Chant">
+                                        <h5 class="text-colored fw-bold mt-2">Molten Chant</h5>
+                                        <p>
+                                            Like lava in song form—fluid, fiery, and full of character. Ideal for expressive spellcasting.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/1.overdrive/phoenix-ember.jpg" alt="Phoenix Ember">
+                                        <h5 class="text-colored fw-bold mt-2">Phoenix Ember</h5>
+                                        <p>
+                                            Rise in sonic flames with bold mids and magical harmonics. An overdrive reborn from ashes.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/1.overdrive/solar-flare.jpg" alt="Solar Flare">
+                                        <h5 class="text-colored fw-bold mt-2">Solar Flare</h5>
+                                        <p>
+                                            Ignite your riffs with blazing, radiant tones. A warm, crystalline overdrive bursting with solar intensity.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="equalizer">
+                                <div class="row">
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/2.eq/arther-band.png" alt="Arther Band">
+                                        <h5 class="text-colored fw-bold mt-2">Arther Band</h5>
+                                        <p>
+                                            7-band EQ to shape your tone with alchemical finesse. Refine your frequency potion.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/2.eq/chakra-tone.png" alt="Chakra Tone">
+                                        <h5 class="text-colored fw-bold mt-2">Chakra Tone</h5>
+                                        <p>
+                                            Align your sonic flow with harmonic balance. Ideal for tone healing and focus.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/2.eq/crystal-matrix.png" alt="Crystal Matrix">
+                                        <h5 class="text-colored fw-bold mt-2">Crystal Matrix</h5>
+                                        <p>
+                                            Polish your tone with clarity and elegance. A sonic lattice for pure tone sculpting.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/2.eq/spectrum-sigil.jpg" alt="Spectrum Sigil">
+                                        <h5 class="text-colored fw-bold mt-2">Spectrum Sigil</h5>
+                                        <p>
+                                            10-band EQ for complete control of your tonal spectrum. Precision with arcane style.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="reverb">
+                                <div class="row">
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/3.reverb/specter-bloom.jpg" alt="Specter Bloom">
+                                        <h5 class="text-colored fw-bold mt-2">Specter Bloom</h5>
+                                        <p>
+                                            A floral, ghostly reverb that blossoms with every chord. Sweet, eerie, and enchanting.
+                                        </p>
+                                    </div>    
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/3.reverb/celestial-vault.jpg" alt="Celestial Vault">
+                                        <h5 class="text-colored fw-bold mt-2">Celestial Vault</h5>
+                                        <p>
+                                            Turn every note into a constellation. Bright, spacey reverb for heavenly ambience.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/3.reverb/ethereal-veil.jpg" alt="Ethereal Veil">
+                                        <h5 class="text-colored fw-bold mt-2">Ethereal Veil</h5>
+                                        <p>
+                                            Wrap your tone in a soft, mystical haze. Perfect for dreamy and ambient textures.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/3.reverb/moonlit-hall.jpg" alt="Moonlit Hall">
+                                        <h5 class="text-colored fw-bold mt-2">Moonlit Hall</h5>
+                                        <p>
+                                            Shimmering reflections under moonlight. Warm, natural reverb with a magical glow.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/3.reverb/obsidian-temple.jpg" alt="Obsidian Temple">
+                                        <h5 class="text-colored fw-bold mt-2">Obsidian Temple</h5>
+                                        <p>
+                                            Dark, deep reverb like echoes in forgotten chambers. Ritualistic and heavy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="delay">
+                                <div class="row">
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/4.delay/dimensional-ripple.jpg" alt="Dimensional Ripple">
+                                        <h5 class="text-colored fw-bold mt-2">Dimensional Ripple</h5>
+                                        <p>
+                                            A crystalline delay with subtle modulation, creating ripples between sound dimensions.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/4.delay/sands-of-sound.jpg" alt="Sands of Sound">
+                                        <h5 class="text-colored fw-bold mt-2">Sands of Sound</h5>
+                                        <p>
+                                            Grainy, rhythmic delay—like sonic sand slipping through the hourglass.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/4.delay/myst-echo-chamber.jpg" alt="Myst Echo Chamber">
+                                        <h5 class="text-colored fw-bold mt-2">Myst Echo Chamber</h5>
+                                        <p>
+                                            Cavernous, mystical delay. Perfect for ethereal atmospheres and incantation trails.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/4.delay/spectral-memory.jpg" alt="Spectral Memory">
+                                        <h5 class="text-colored fw-bold mt-2">Spectral Memory</h5>
+                                        <p>
+                                            Haunting repeats that preserve echoes of the past. Subtle, ghostly, and immersive.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/4.delay/temporal-echoes.jpg" alt="Temporal Echoes">
+                                        <h5 class="text-colored fw-bold mt-2">Temporal Echoes</h5>
+                                        <p>
+                                            Let echoes ripple through the ages. A delay that bends time with spectral beauty.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/4.delay/echo-philosopher.jpg" alt="Echo Philosopher">
+                                        <h5 class="text-colored fw-bold mt-2">Echo Philosopher - Reflections of Infinity</h5>
+                                        <p>
+                                            The Echo Philosopher is more than a delay pedal. It’s a gateway to sonic introspection.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="fuzz">
+                                <div class="row">
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/5.fuzz/ashen-oracle.jpg" alt="Ashen Oracle">
+                                        <h5 class="text-colored fw-bold mt-2">Ashen Oracle</h5>
+                                        <p>
+                                            Grainy, arcane fuzz that sounds like it’s blown from ancient ashes. Smoky, mysterious, and bold.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/5.fuzz/crimson-cauldron.jpg" alt="Crimson Cauldron">
+                                        <h5 class="text-colored fw-bold mt-2">Crimson Cauldron</h5>
+                                        <p>
+                                            A thick, bubbling fuzz that burns like a fiery potion. Perfect for searing riffs and spell-laced leads.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/5.fuzz/hex-fuzz.jpg" alt="Hex Fuzz">
+                                        <h5 class="text-colored fw-bold mt-2">Hex Fuzz</h5>
+                                        <p>
+                                            A fuzz spell with wild, chaotic texture. Bewitch your signal with enchanted fuzz energy.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/5.fuzz/runestone.jpg" alt="Runestone">
+                                        <h5 class="text-colored fw-bold mt-2">Runestone</h5>
+                                        <p>
+                                            Heavy as carved stone. Dense, primal fuzz that rumbles with ancient energy.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/5.fuzz/witchs-brew.jpg" alt="Witch's Brew">
+                                        <h5 class="text-colored fw-bold mt-2">Witch's Brew</h5>
+                                        <p>
+                                            Vintage and modern fuzz fused into one potent sonic potion. Classic vibes with magical overtones.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="noise-reduction">
+                                <div class="row">
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/6.nr/echo-banish.png" alt="Echo Banish">
+                                        <h5 class="text-colored fw-bold mt-2">Echo Banish</h5>
+                                        <p>
+                                            Cast out the unwanted echoes. Subtle yet powerful noise suppression.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/6.nr/null-hex.jpg" alt="Null Hex">
+                                        <h5 class="text-colored fw-bold mt-2">Null Hex</h5>
+                                        <p>
+                                            Nullify unwanted noise with spellbound precision. Clean tone, untouched magic.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/6.nr/quiet-sanctum.jpg" alt="Quiet Sanctum">
+                                        <h5 class="text-colored fw-bold mt-2">Quiet Sanctum</h5>
+                                        <p>
+                                            Build a sanctuary of silence between notes. Ideal for both stage and studio.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/6.nr/runic-gatekeeper.jpg" alt="Runic Gatekeeper">
+                                        <h5 class="text-colored fw-bold mt-2">Runic Gatekeeper</h5>
+                                        <p>
+                                            A mystical guardian that cuts the noise and preserves the flow of your sonic ritual.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/6.nr/silencer-s-seal.jpg" alt="Silencer's Seal">
+                                        <h5 class="text-colored fw-bold mt-2">Silencer's Seal</h5>
+                                        <p>
+                                            Seal the chaos without harming your tone. A magical gate that keeps your signal pure.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="heavy-distortion">
+                                <div class="row">
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/7.heavy/dragon-s-maw.png" alt="Dragon's Maw">
+                                        <h5 class="text-colored fw-bold mt-2">Dragon's Maw</h5>
+                                        <p>
+                                            Unleash fire and fury. A distortion pedal that roars with dragon-breath intensity.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/7.heavy/iron-ritual.png" alt="Iron Ritual">
+                                        <h5 class="text-colored fw-bold mt-2">Iron Ritual</h5>
+                                        <p>
+                                            Melted metal in sonic form. Ritual-grade distortion for powerful, precise aggression.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/7.heavy/cursed-iron.jpg" alt="Cursed Iron">
+                                        <h5 class="text-colored fw-bold mt-2">Cursed Iron</h5>
+                                        <p>
+                                            A cursed distortion with demonic mids and haunting lows. Heavy and haunted.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/7.heavy/netherfire.jpg" alt="Netherfire">
+                                        <h5 class="text-colored fw-bold mt-2">Netherfire</h5>
+                                        <p>
+                                            Flames from the underworld fuel this fierce distortion. For unholy tones and scorched riffs.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 img-wrapper m-1">
+                                        <img class="d-block w-100 img-store" src="./images/pedals/7.heavy/oblivion-shard.jpg" alt="Oblivion Shard">
+                                        <h5 class="text-colored fw-bold mt-2">Oblivion Shard</h5>
+                                        <p>
+                                            Shards of sonic destruction. Doom, sludge, and abyssal metal distortion at your fingertips.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+        </section>
+        <section id="contact" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center pb-2">Brewing up questions or spellbinding suggestions? Drop us a message in the cauldron below!</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label fw-bold text-colored">Your name</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Your e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label fw-bold text-colored">Your phone (optional)</label>
+                                <input type="tel" id="phone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label fw-bold text-colored">Your message to us</label>
+                                <textarea class="form-control" id="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Send the raven <i class="bi bi-feather ms-1"></i> </button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-moon-stars-fill"></i>
+                                Astral Network
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5 ms-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-black"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-black"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-black"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-compass-fill"></i>
+                                Location
+                            </h3>
+                            <p class=" ms-5">
+                                27 Aether Row, Arcana District<br>Sanctum City, New Albion</br>NX-9041 – United States
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>
+                    &copy; 2025 Alchemy Chamber - All rights reserved - Thaise Zago
+                </p>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
