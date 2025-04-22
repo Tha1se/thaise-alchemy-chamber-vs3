@@ -95,4 +95,8 @@ body {
     .carousel-item img {
         height: 280px;
     }
+
+    .footer {
+        font-size: 10px;
+    }
 }
